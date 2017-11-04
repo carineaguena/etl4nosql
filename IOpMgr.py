@@ -1,8 +1,4 @@
-'''
-Created on 3 de nov de 2017
 
-@author: carineaguena
-'''
 
 class IOpMgt(object):
     def __init__(self, codModel):
@@ -10,10 +6,8 @@ class IOpMgt(object):
         self.ops = []
     
     def modelOperation(self):
-        pass
+        pass    
     
-    
-    #Operation Management
     def putOps(self, op):
         self.ops.append(op)
         

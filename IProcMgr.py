@@ -1,14 +1,19 @@
-'''
-Created on 3 de nov de 2017
-
-@author: carineaguena
-'''
 
 
 class IProcMgt(object):
     
-    def __init__(self, codOp):
+    def __init__(self, codOp, listOp):
         self.codOp = codOp
-        
+        self.listOp = listOp
+    
     def process(self):
+        return self.listOp
+    
+    def processParallel(self):
+        pass
+    
+    def processDistributed(self):
+        pass
+    
+    def processHybrid(self):
         pass
