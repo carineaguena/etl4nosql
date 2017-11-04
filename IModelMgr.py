@@ -18,7 +18,8 @@ class IModelMgt(object):
     
     def createOp(self):
         query_op = raw_input("Query to operate:")
-        return query_op
+        return query_op    
+            
     
     
         
