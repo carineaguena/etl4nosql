@@ -17,3 +17,4 @@ class IModelMgt(object):
         query_write = raw_input("Query to write:")
         return query_write
         
+        

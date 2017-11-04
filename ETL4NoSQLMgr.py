@@ -1,5 +1,3 @@
-
-
 # Adiciona as interfaces do framework
 import IDataMgr
 import IModelMgr
@@ -33,14 +31,13 @@ while True:
     try:
         select = 1
         operacao.putOps(amostra.createOp())
-        select = int(input("to continue press 1 or press another number to stop:"))
+        select = int(input("to continue press 1 or press another number:"))
     except ValueError:
         print("Not a valid input")
     else:
         if select != 1:
             break
 print(operacao.getOps())
-
 
 ## Processa as operacoes
 processar = IProcMgr.IProcMgt(id(operacao), operacao.getOps())

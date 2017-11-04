@@ -6,7 +6,7 @@ class IOpMgt(object):
         self.ops = []
     
     def modelOperation(self):
-        pass    
+        self.ops.sort(cmp=None, key=None, reverse=False)  
     
     def putOps(self, op):
         self.ops.append(op)
@@ -20,4 +20,5 @@ class IOpMgt(object):
         
     def popOp(self, op):
         self.ops.pop(self.ops.index(op))
+        
         
